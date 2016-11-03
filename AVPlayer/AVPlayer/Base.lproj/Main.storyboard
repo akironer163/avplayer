@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEO-28-Ypu">
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="navigationButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOk-IA-pQj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1y-wY-zRv">
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="navigationButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4fl-zv-KI7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjb-eE-31A">
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="navigationButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roA-Sm-ljN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5N-Nu-x1J">
+                                <state key="normal" title="暂停"/>
+                                <connections>
+                                    <action selector="playClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVf-3Z-zsX"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UDq-gI-303">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="TQX-3A-4hr"/>
+                                </constraints>
+                            </progressView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0k2-AS-8Hg">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T1y-wY-zRv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2Rp-4T-1tS"/>
+                            <constraint firstItem="T1y-wY-zRv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Zg-La-D7m"/>
+                            <constraint firstItem="d5N-Nu-x1J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="241" id="CM9-xE-aCE"/>
+                            <constraint firstItem="0k2-AS-8Hg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gg7-1m-IJZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d5N-Nu-x1J" secondAttribute="trailing" constant="149" id="KNX-0m-OS2"/>
+                            <constraint firstItem="UDq-gI-303" firstAttribute="centerX" secondItem="d5N-Nu-x1J" secondAttribute="centerX" id="N8S-3R-EV0"/>
+                            <constraint firstAttribute="trailing" secondItem="0k2-AS-8Hg" secondAttribute="trailing" id="OG2-cL-CSw"/>
+                            <constraint firstItem="UDq-gI-303" firstAttribute="top" secondItem="0k2-AS-8Hg" secondAttribute="bottom" constant="10" id="OXK-db-Rq2"/>
+                            <constraint firstItem="tjb-eE-31A" firstAttribute="leading" secondItem="T1y-wY-zRv" secondAttribute="trailing" constant="47" id="Tvx-S2-RS3"/>
+                            <constraint firstItem="tjb-eE-31A" firstAttribute="top" secondItem="T1y-wY-zRv" secondAttribute="top" id="dRv-R1-F9L"/>
+                            <constraint firstItem="nEO-28-Ypu" firstAttribute="centerY" secondItem="T1y-wY-zRv" secondAttribute="centerY" id="dVI-A6-k1g"/>
+                            <constraint firstItem="0k2-AS-8Hg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="e5e-9L-U1j"/>
+                            <constraint firstItem="d5N-Nu-x1J" firstAttribute="top" secondItem="UDq-gI-303" secondAttribute="bottom" constant="18" id="fBS-ey-GAV"/>
+                            <constraint firstItem="T1y-wY-zRv" firstAttribute="leading" secondItem="nEO-28-Ypu" secondAttribute="trailing" constant="51" id="jMQ-8T-Qrz"/>
+                            <constraint firstItem="UDq-gI-303" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="u4d-f4-ZDG"/>
+                            <constraint firstItem="d5N-Nu-x1J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="yTi-4u-PV2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="container" destination="0k2-AS-8Hg" id="giR-4i-UY1"/>
+                        <outlet property="playOrPause" destination="d5N-Nu-x1J" id="yFb-Iy-T5p"/>
+                        <outlet property="progress" destination="UDq-gI-303" id="4QC-Zs-TOQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="61"/>
+        </scene>
+    </scenes>
+</document>
